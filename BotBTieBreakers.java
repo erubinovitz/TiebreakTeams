@@ -28,8 +28,8 @@ For each round and each match, enter a 0 if the first team won and a 1 if the se
 For example, if the winners in the irst round were 6, 2, 3, and 4, the input for the first
 round should be: 1 0 0 0.
 */
-private static int NUM_TEAMS=16;
-private static int NUM_ROBIN=8;
+private static int NUM_TEAMS=8;
+private static int NUM_ROBIN=4;
 private static int NUM_CUT=NUM_TEAMS/2;
 public static void main(String[] args){
     int NUM_TRIALS=100;
