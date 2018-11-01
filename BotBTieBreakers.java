@@ -185,8 +185,8 @@ public static void main(String[] args){
                                 (indexes[i]>=NUM_TEAMS/2&&indexes[j]>=NUM_TEAMS/2) )   )                             ){
                             beat=false;
                             if (i==0){
-                                System.out.println(" i = " + i + " j = " + j + " indexes[i]= " +indexes[i]+ " indexes [j] = " 
-                                +indexes[j] + " scores = " +scores[indexes[i]][indexes[j]]);
+                               /* System.out.println(" i = " + i + " j = " + j + " indexes[i]= " +indexes[i]+ " indexes [j] = " 
+                                +indexes[j] + " scores = " +scores[indexes[i]][indexes[j]]);*/
                             }
 
                         }
@@ -218,20 +218,20 @@ public static void main(String[] args){
             
             
 
-            for (int i=0; i<wins.length; i++){
+          /*  for (int i=0; i<wins.length; i++){
                 System.out.println("wins["+i+"] i " +wins[i]);
-            }
+            }*/
             int ret=1;
             String[] tieTeams = new String[numTies];
             int marker=0;
-            System.out.println("numTies is " + numTies + " ties left is  " + tiesLeft );
+           // System.out.println("numTies is " + numTies + " ties left is  " + tiesLeft );
             /* For the remaining, deter if tiebreaking games must be played or if
             outcomes can be decided based on the wins array.
             */
             if (wins[tiesLeft]==wins[tiesLeft-1]){
                 int lastIndex =wins.length-1;
                 startingIndex=0;
-                System.out.println("starting idnex is " +startingIndex + " last is " + lastIndex);
+             //   System.out.println("starting idnex is " +startingIndex + " last is " + lastIndex);
                 while (wins[startingIndex]==-1) startingIndex++;
                 while (wins[lastIndex]==-1) lastIndex--;
                 boolean breakersNeeded=false;
