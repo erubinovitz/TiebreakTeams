@@ -244,7 +244,7 @@ public static void main(String[] args){
                                 + "higher W/L than the other(s). (W score: " + wins[startingIndex-1]+")");
                     }
                 }
-                System.out.println("TEST");
+             
                 return 2;
             }
             for (int i=0; i<numTies; i++){
